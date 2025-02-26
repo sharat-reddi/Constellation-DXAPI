@@ -1,0 +1,141 @@
+{
+  "name": "Areteans_Extensions_SampleProgressBar",
+  "label": "Sample Progress Bar",
+  "description": "Sample Progress Bar",
+  "organization": "Areteans",
+  "version": "1.0.0",
+  "library": "Extensions",
+  "allowedApplications": [],
+  "componentKey": "Areteans_Extensions_SampleProgressBar",
+  "type": "Field",
+  "subtype": "Text",
+  "properties": [
+    {
+      "name": "label",
+      "label": "Label value",
+      "format": "TEXT"
+    },
+    {
+      "name": "progressValue",
+      "label": "Progress Value",
+      "format": "NUMBER",
+      "defaultValue": 0
+    },
+    {
+      "name": "statusLabel",
+      "label": "Status Label",
+      "format": "TEXT",
+      "defaultValue": "Idle"
+    },
+    {
+      "name": "timeIndicator",
+      "label": "Time Indicator",
+      "format": "TEXT",
+      "defaultValue": "N/A"
+    },
+    {
+      "name": "icon",
+      "label": "Icon URL",
+      "format": "TEXT",
+      "defaultValue": ""
+    },
+    {
+      "name": "title",
+      "label": "Title",
+      "format": "TEXT",
+      "defaultValue": "Progress"
+    },
+    {
+      "name": "state",
+      "label": "Progress State",
+      "format": "TEXT",
+      "defaultValue": "Idle",
+      "options": [
+        {
+          "value": "Idle",
+          "label": "Idle"
+        },
+        {
+          "value": "Active",
+          "label": "Active"
+        },
+        {
+          "value": "Success",
+          "label": "Success"
+        },
+        {
+          "value": "Error",
+          "label": "Error"
+        }
+      ]
+    },
+    {
+      "name": "colors",
+      "label": "Color Customization",
+      "format": "GROUP",
+      "properties": [
+        {
+          "name": "progressBar",
+          "label": "Progress Bar Color",
+          "format": "COLOR",
+          "defaultValue": "#007BFF"
+        },
+        {
+          "name": "statusText",
+          "label": "Status Text Color",
+          "format": "COLOR",
+          "defaultValue": "#333"
+        }
+      ]
+    },
+    {
+      "name": "showUploadButton",
+      "label": "Show Upload Button",
+      "format": "BOOLEAN",
+      "defaultValue": true
+    },
+    {
+      "name": "visibility",
+      "label": "Visible",
+      "format": "VISIBILITY"
+    },
+    {
+      "name": "disabled",
+      "label": "Disabled",
+      "format": "DISABLED"
+    },
+    {
+      "name": "required",
+      "label": "Required",
+      "format": "REQUIRED"
+    },
+    {
+      "label": "Advanced",
+      "format": "GROUP",
+      "collapsible": true,
+      "properties": [
+        {
+          "name": "testId",
+          "label": "Test ID",
+          "format": "TEXT",
+          "ignorePattern": "[^-_\\p{N}\\p{L}]",
+          "includeAnnotations": false
+        }
+      ]
+    }
+  ],
+  "defaultConfig": {
+    "label": "Progress Bar",
+    "progressValue": 0,
+    "statusLabel": "Idle",
+    "timeIndicator": "N/A",
+    "icon": "",
+    "title": "Progress",
+    "state": "Idle",
+    "colors": {
+      "progressBar": "#007BFF",
+      "statusText": "#333"
+    },
+    "showUploadButton": false
+  }
+}
